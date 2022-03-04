@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input[type=text], select {
+          width: 100%;
+          padding: 8px 20px;
+          margin: 10px 0 8px;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+
+        input[type=radio]{
+          padding: 8px 20px;
+          margin: 10px 5px;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+          width: 100%;
+          background-color: #3e6db3;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #1c4786;
+        }
+        
+        div {
+          border-radius: 5px;
+          padding-left: 100px;
+          padding-right: 100px;
+        }
+        </style>
+</head>
+<body>
+    <div>
+        <h1 align="center">Pendaftaran Mahasiswa Baru</h1>
+        <form action="#">
+          <label for="npm">NPM (Nomor Pokok Mahasiswa)</label>
+          <input type="text" id="npm" name="npm" placeholder="Masukkan NPM Anda">
+      
+          <label for="lengkap">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+      
+          <label for="alamat">Alamat</label>
+          <input type="text" id="alamat" name="alamat" placeholder="Masukkan alamat Anda">
+        
+          <label for="jk">Jenis Kelamin</label><br>
+          <input type="radio" id="lk" name="jk"><label for="lk">Laki-laki</label><br>
+          <input type="radio" id="pr" name="jk"><label for="pr">Perempuan</label><br>
+
+          <br><label for="prodi">Program Studi</label>
+            <select id="prodi" name="prodi">
+                <option value="default">Pilih program studi</option>
+                <option value="TI">Teknik Informatika</option>
+                <option value="SI">Sistem Informasi</option>
+            </select>
+  
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+</body>
+</html>
